@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "VPN",
+  "description": "VPN extension",
+  "version": "1.0.0",
+  "icons": {
+    "16": "img/vpn-icon.png",
+    "48": "img/vpn-icon.png",
+    "128": "img/vpn-icon.png"
+  },
+  "browser_action": {
+    "default_icon": "img/vpn-icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "tabs", "storage"],
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/script.js", "js/jquery-2.0.3.min.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
