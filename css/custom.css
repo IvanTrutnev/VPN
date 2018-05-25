@@ -4,11 +4,16 @@
  *	
  */
 
+html {
+    font-size: 10px;
+}
+
 body, section {			/* Change width and height to own preferences */
 	width: 250px;
 	height: 300px;
 	overflow-x: hidden;
 }
+
 
 /* Basic style tweaks */
 section { padding: 5px;}
@@ -16,40 +21,16 @@ section { padding: 5px;}
 
 
 /* Scroll Bar */
-::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar { width: 2px; }
 ::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); }
-::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:window-inactive  { background: red; }
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:window-inactive  { background: #797979; }
 
 
 /* custom styles */
 
 .container {
     padding-top: 15px;
-}
-
-.wallet-params {
-    font-weight: 700;
-    color: #bcbcbc;
-    font-size: 18px;
-}
-.wallet-value {
-    font-weight: 700;
-    color: #333333;
-    font-size: 16px;
-    vertical-align: middle;
-}
-.params-group > div {
-    margin-top: 10px;
-}
-
-.button-group {
-    margin-top: 50px;
-}
-.button-group > button {
-    background: #ccffff;
-    font-weight: 700;
-    color: #333333;
-    font-size: 16px;
+    width: 100%
 }
 
 .flex {
@@ -60,48 +41,42 @@ section { padding: 5px;}
     text-align: center;
 }
 
-#deposit-popup {
-    display: none;
+.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+.toggle.ios .toggle-handle { border-radius: 20px; }
+
+.vpn-toggle {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
 }
-.deposit-title {
-    margin-left: 250px;
+.vpn-toggle > label {
+    margin-right: 7px;
 }
 
-.title-block {
+.current-vpn {
     position: relative;
 }
-
-.title-block .close-icon {
+.current-vpn-name, .current-vpn-location {
+    font-size: 1.6rem;
+}
+.check-icon {
+    font-size: 1.8rem;
     position: absolute;
-    top: 14px;
-    right: 10px;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
+    top: 10px;
+    left: 5px;
 }
-
-.qr-code {
-    margin: 15px 0;
-}
-
-#request-sum::placeholder {
-    position: relative;
-    left: 130px;
-}
-
-.line {
-    width: 40px;
-    border: 1px solid #000;
-    height: 2px;
-}
-
-.usd-value {
-    display: inline-block;
-    width: 60px;
-    border-bottom: 1px solid;
-}
-
-.next-button > button {
+.separate-line {
+    border: 1px solid #797979;
+    height: 1px;
     margin-top: 15px;
-    font-size: 18px;
+}
+.vpn-address-list {
+    margin-top: 5px;
+    height: 250px;
+    overflow-y: scroll;
+}
+.vpn-address-item {
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 5px 0;
 }
