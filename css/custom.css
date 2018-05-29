@@ -10,7 +10,7 @@ html {
 
 body, section {			/* Change width and height to own preferences */
 	width: 250px;
-	height: 300px;
+	height: 450px;
 	overflow-x: hidden;
 }
 
@@ -74,7 +74,7 @@ section { padding: 5px;}
 }
 
 .vpn-address-list {
-    height: 250px;
+    height: 330px;
     overflow-y: scroll;
 }
 .vpm-address-country {
