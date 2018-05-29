@@ -50,7 +50,7 @@ section { padding: 5px;}
     background: linear-gradient(to right, #305581 , #623d86);
     height: 60px;
     padding-top: 15px;
-    border-bottom: 1px solid #eef2f5;
+    border-bottom: 1px solid #5f6695;
 }
 .vpn-toggle > label {
     margin-right: 7px;
@@ -88,4 +88,7 @@ section { padding: 5px;}
     cursor: pointer;
     border-bottom: 1px solid #e4e4e4;
     padding: 10px 15px;
+}
+.vpn-address-item:hover {
+    background: #97bcb8;
 }
