@@ -21,7 +21,7 @@ section { padding: 5px;}
 
 
 /* Scroll Bar */
-::-webkit-scrollbar { width: 5px; border-radius: 4px; }
+::-webkit-scrollbar { width: 7px; border-radius: 4px; }
 ::-webkit-scrollbar-track { background: white; border-radius: 4px; }
 ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:window-inactive
 { background: #e1e8ee; border-radius: 4px;}
