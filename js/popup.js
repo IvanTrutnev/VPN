@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
     'England': ['vpn1', 'vpn2', 'vpn3','vpn4']
   };
 
+
   const addressList = document.getElementById('vpn-address-list');
 
   for(var key in vpnAddressesData) {
-    console.log(vpnAddressesData[key]);
     let addressGroup = document.createElement('div');
     addressGroup.className = 'vpm-address-group';
 
